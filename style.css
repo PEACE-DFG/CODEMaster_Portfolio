@@ -314,8 +314,9 @@ section{
     content: "";
     position: absolute;
     inset: 20px;
-    background-image: url('img/code.png');
-    height: auto;
+    background: #d2e9ff;
+    /* background-image: url('img/code.png'); */
+    /* height: auto; */
     border-radius: 50%;
     z-index: 1;
 }
