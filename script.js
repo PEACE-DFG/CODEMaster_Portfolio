@@ -185,3 +185,76 @@ ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "le
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
 
+
+
+// const username = 'PEACE-DFG';
+// const accessToken = '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'; // Replace with your actual token
+
+// // API endpoint to fetch the user's repositories
+// const apiUrl = `https://api.github.com/users/${username}/repos`;
+
+// // Function to fetch data from the GitHub API
+// async function fetchGitHubData() {
+//   try {
+//     const response = await fetch(apiUrl, {
+//       headers: {
+//         Authorization: `token ${accessToken}`,
+//       },
+//     });
+
+//     if (response.status === 200) {
+//       const repositories = await response.json();
+//       processGitHubData(repositories);
+//     } else {
+//       console.error('Failed to fetch GitHub data.');
+//     }
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+
+// // Function to process and render GitHub data
+// function processGitHubData(repositories) {
+//   // Extract languages and commit counts from repositories
+//   const languages = {};
+//   let totalCommits = 0;
+
+//   repositories.forEach(repo => {
+//     const language = repo.language;
+//     const commits = repo.master ? repo.master.commit.committer?.commit_count : 0;
+
+//     if (language) {
+//       if (languages[language]) {
+//         languages[language] += commits;
+//       } else {
+//         languages[language] = commits;
+//       }
+
+//       totalCommits += commits;
+//     }
+//   });
+
+//   // Create an array of data for the chart
+//   const chartData = {
+//     labels: Object.keys(languages),
+//     datasets: [
+//       {
+//         data: Object.values(languages),
+//         backgroundColor: ['#F7464A', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'],
+//       },
+//     ],
+//   };
+
+//   // Render the language chart
+//   const ctx = document.getElementById('language-chart').getContext('2d');
+//   new Chart(ctx, {
+//     type: 'doughnut',
+//     data: chartData,
+//   });
+
+//   // Display the total commits count
+//   document.getElementById('commit-count').textContent = `Total Commits: ${totalCommits}`;
+// }
+
+// // Call the function to fetch and process GitHub data
+// fetchGitHubData();
