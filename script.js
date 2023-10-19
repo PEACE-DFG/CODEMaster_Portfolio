@@ -258,3 +258,4 @@ ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-her
 
 // // Call the function to fetch and process GitHub data
 // fetchGitHubData();
+
