@@ -1192,3 +1192,28 @@ footer{
         padding: 13px;
     }
 }
+
+
+
+
+/* ==================================== */
+/* mobile view */
+#aller{
+    position: absolute;
+}
+#fix{
+    position: relative;
+  
+
+}
+iframe{
+    border: none;
+    overflow: auto;
+    width: 340px;
+    height: 300px;
+    position: fixed;
+    z-index: 100;
+    top: 120;
+    left: 1000px;
+    border-radius: 10px;
+}
