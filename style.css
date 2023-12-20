@@ -1214,6 +1214,6 @@ iframe{
     position: fixed;
     z-index: 100;
     top: 120;
-    left: 1000px;
+    left: 995px;
     border-radius: 10px;
 }
